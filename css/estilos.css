@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+}
+
+canvas {
+  /* display: block; */
+  border: 30px solid red;
+  border-radius: 50%;
+}
