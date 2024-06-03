@@ -94,13 +94,13 @@ form {
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   canvas {
-    width: 80% !important;
+    width: 90% !important;
     height: auto !important;
   }
 }
