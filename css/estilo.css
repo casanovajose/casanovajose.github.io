@@ -32,9 +32,8 @@ body {
   color: var(--color-texto);
 }
 
-article {
+section {
   width: 100%;
-  max-width: 600px;
   padding: 10px;
 }
 
@@ -45,6 +44,7 @@ canvas {
   padding: var(--padding);
   border-radius: var(--radius);
   width: 50% !important;
+  max-width: 640px;
   height: auto !important;
 }
 
@@ -52,6 +52,7 @@ canvas {
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  width: 80%;
   margin: var(--margin) auto;
   border: solid var(--color-texto) 1px;
   padding: var(--padding);
@@ -93,14 +94,14 @@ form {
   border: solid var(--color-texto) 1px;
   border-radius: 5px;
 }
-
-@media screen and (max-width: 800px) {
+/* 
+@media screen and (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   canvas {
-    width: 90% !important;
+    width: 80% !important;
     height: auto !important;
   }
-}
+} */
