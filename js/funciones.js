@@ -5,7 +5,7 @@ let poses = [];
 let canvas = null;
 
 const grillaCapturas = document.querySelector(".grid");
-const cuerpo = ["leftWrist", "rightWrist", "nose"];
+const cuerpo = ["leftWrist", "rightWrist", "nose", "leftEye", "rightEye", "leftAnkle", "rightAnkle"];
 
 let parteCuerpo = null;
 let posicionParteCuerpo = {x: -100, y: -100}
