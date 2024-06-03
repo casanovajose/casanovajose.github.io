@@ -12,9 +12,12 @@ let posicionParteCuerpo = {x: -100, y: -100}
 let objetivo = null;
 
 function setup() {
-  canvas = createCanvas(640, 480, document.querySelector("canvas"));
   video = createCapture(VIDEO, { flipped:true });
+  console.log("Video", video);
+  canvas = createCanvas(640, 480, document.querySelector("canvas"));
+  console.log("canvas", canvas);
   video.size(width, height);
+  
   rectMode(CENTER);
   objetivo = nuevoObjetivo();
   parteCuerpo = elegirElemento(cuerpo);
@@ -63,7 +66,8 @@ function draw() {
   stroke(0, 255, 0);
   fill(0, 255, 0);
   circle(objetivo.x, objetivo.y, 10);
-  rect(posicionParteCuerpo.x, posicionParteCuerpo.y, 40, 40);
+  noFill();
+  circle(posicionParteCuerpo.x, posicionParteCuerpo.y, 40);
 }
 
 function crearImagen(grilla, src) {

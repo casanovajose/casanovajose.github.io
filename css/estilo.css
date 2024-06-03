@@ -44,6 +44,8 @@ canvas {
   border: solid var(--color-texto) 1px;
   padding: var(--padding);
   border-radius: var(--radius);
+  width: 50% !important;
+  height: auto !important;
 }
 
 .grid {
@@ -92,3 +94,13 @@ form {
   border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  canvas {
+    width: 80% !important;
+    height: auto !important;
+  }
+}
